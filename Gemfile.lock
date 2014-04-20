@@ -112,10 +112,6 @@ GEM
     sprockets-sass (1.1.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    stylus (1.0.1)
-      execjs
-      stylus-source
-    stylus-source (0.42.2)
     temple (0.6.7)
     thor (0.19.1)
     thread_safe (0.3.3)
@@ -134,6 +130,5 @@ DEPENDENCIES
   middleman-deploy
   middleman-livereload (~> 3.1.0)
   slim
-  stylus
   tzinfo-data
   wdm (~> 0.1.0)
