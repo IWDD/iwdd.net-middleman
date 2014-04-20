@@ -70,3 +70,10 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# iwdd.github.io deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.remote   = "https://github.com/IWDD/iwdd.github.io.git"
+  deploy.branch   = "master"
+end
