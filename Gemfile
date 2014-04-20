@@ -17,4 +17,3 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "middleman-deploy"
 
 gem "slim"
-gem "stylus"

@@ -1,5 +1,4 @@
 require "slim"
-require "stylus"
 
 # livereload settings.
 configure :development do
