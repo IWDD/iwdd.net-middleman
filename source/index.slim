@@ -2,11 +2,31 @@
 title: Welcome to IWDD
 ---
 
-header
-  div.row
-    div.small-12.columns
+nav.top-bar data-topbar=""
+  ul.title-area
+    li.name
       h1
-        = image_tag 'iwdd_logo.svg', :alt => "iwdd logo"
+        a href="/"
+          = image_tag 'iwdd_logo.svg', :alt => "IWDD", :id => "iwdd_logo"
+          div#iwdd_logo_desc
+            span
+              | Iwate&nbsp;
+            span
+              | Web&nbsp;
+            span
+              | Designers&nbsp;&amp;&nbsp;
+            span
+              | Developers
+    li.toggle-topbar.menu-icon
+      a href="#"
+  section.top-bar-section
+    ul.right
+      li.active
+        a href="#"
+          | 次回開催
+      li
+        a href="#"
+          | IWDDとは
 
 div.row
   div.small-12.columns
