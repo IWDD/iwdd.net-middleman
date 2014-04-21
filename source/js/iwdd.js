@@ -15,5 +15,5 @@
 //= NOT require foundation/foundation.slider
 //= NOT require foundation/foundation.tab
 //= NOT require foundation/foundation.tooltip
-//= NOT require foundation/foundation.topbar
-//= require iwdd
+//= require foundation/foundation.topbar
+//= require main

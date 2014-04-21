@@ -1,3 +1,16 @@
-body {
-  background-color: #efefef;
+#iwdd_logo {
+  height: $topbar-height * 0.72;
+}
+
+#iwdd_logo_desc {
+  display: inline-block;
+  font-size: rem-calc(13);
+  color:#000;
+  margin-left: rem-calc(13);
+  &>span {
+    display: inline-block;
+    &:first-letter {
+      color: $iwdd_red;
+    }
+  }
 }
