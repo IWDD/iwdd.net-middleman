@@ -14,7 +14,16 @@ html.no-js lang="ja"
     = stylesheet_link_tag "iwdd"
     = javascript_include_tag "modernizr.custom"
 
+    // foundation5 for IE8 polyfill.
+    // https://github.com/jeffclemens/ie8-foundation5
+    /![if lt IE 9]<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+
   body class="#{page_classes}"
+    // foundation5 for IE8 polyfill.
+    | <!--[if lt IE 9]><div style="text-align:center;font-size:16px;font-weight:bold;line-height:2;height:32px;background-color:#fcc;">お使いのブラウザは古いので対応していません。安心してネットを使うために最新のブラウザを使いましょう。<a href="http://browsehappy.com/" style="color:red;"> 詳しく見る </a></div><![endif]-->
     = yield
 
+    // foundation5 for IE8 polyfill.
+    // https://github.com/jeffclemens/ie8-foundation5
+    /![if lt IE 9]<script src="/js/rem.min.js"></script>
     = javascript_include_tag "iwdd"
