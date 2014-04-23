@@ -1,10 +1,7 @@
 @charset "utf-8";
-
-// iwdd settings
-$iwdd_red: #FD2518;
-
+@import "_iwdd_settings";
 @import "normalize";
-@import "foundation/_settings";
+@import "foundation/settings";
 @import "foundation/components/grid";
 // @import "foundation/components/accordion";
 // @import "foundation/components/alert-boxes";
