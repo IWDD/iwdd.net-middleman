@@ -16,4 +16,3 @@
 //= NOT require foundation/foundation.tab
 //= NOT require foundation/foundation.tooltip
 //= require foundation/foundation.topbar
-//= require main
