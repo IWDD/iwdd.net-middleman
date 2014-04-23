@@ -2,18 +2,30 @@
 @import "foundation/settings";
 
 #iwdd_logo {
-  height: $topbar-height * 0.72;
-}
-
-#iwdd_logo_desc {
-  display: inline-block;
   font-size: rem-calc(13);
   color:#000;
-  margin-left: rem-calc(13);
   &>span {
     display: inline-block;
+    &>img {
+      width:132px;
+      height: 32px;
+    }
     &:first-letter {
       color: $iwdd_red;
     }
+    &:nth-child(1) {
+      margin-right: rem-calc(20);
+    }
   }
 }
+
+@media #{$small-only} {
+  @media #{$portrait} {
+    #iwdd_logo {
+      &>span:nth-child(n+2) {
+        display: none;
+      }
+    }
+  }
+}
+
