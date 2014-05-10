@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/IWDD/iwdd.github.io-middleman.png?branch=master)](https://travis-ci.org/IWDD/iwdd.github.io-middleman)
+
 iwdd.github.io-middleman
 ========================
 
@@ -24,7 +26,7 @@ git clone https://github.com/あなたのID/iwdd.github.io-middleman.git
 
 ## 開発環境の整備
 
-いまのところ使っているのは [middleman](http://middlemanapp.com/) + [slim](http://slim-lang.com/) + [stylus](http://learnboost.github.io/stylus/) + [CoffeeScript](http://coffeescript.org/)
+いまのところ使っているのは [middleman](http://middlemanapp.com/) + [slim](http://slim-lang.com/) + [scss](http://sass-lang.com/) + [CoffeeScript](http://coffeescript.org/)
 
 
 1. ディレクトリに移動  
