@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/suzuryo/iwdd.github.io-middleman.svg?branch=master)](https://travis-ci.org/suzuryo/iwdd.github.io-middleman)
+[![Build Status](https://travis-ci.org/IWDD/iwdd.github.io-middleman.png?branch=master)](https://travis-ci.org/IWDD/iwdd.github.io-middleman)
 
 iwdd.github.io-middleman
 ========================
