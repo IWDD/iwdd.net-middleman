@@ -21,6 +21,9 @@ html.no-js lang="ja"
   body class="#{page_classes}"
     // foundation5 for IE8 polyfill.
     | <!--[if lt IE 9]><div style="text-align:center;font-size:16px;font-weight:bold;line-height:2;height:32px;background-color:#fcc;">お使いのブラウザは古いので対応していません。安心してネットを使うために最新のブラウザを使いましょう。<a href="http://browsehappy.com/" style="color:red;"> 詳しく見る </a></div><![endif]-->
+
+    = partial 'nav'
+
     = yield
 
     // foundation5 for IE8 polyfill.
