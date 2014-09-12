@@ -11,7 +11,7 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 # slim-lang settings.
-Slim::Engine.set_default_options :pretty => true
+set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
 
 # Build-specific configuration
 configure :build do
