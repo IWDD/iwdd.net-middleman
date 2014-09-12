@@ -137,7 +137,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.3.5)
   middleman-deploy
-  middleman-livereload (~> 3.1.0)
+  middleman-livereload (~> 3.1.1)
   slim
   tzinfo-data
   wdm (~> 0.1.0)
