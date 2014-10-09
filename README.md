@@ -3,30 +3,16 @@
 iwdd.github.io-middleman
 ========================
 
-http://www.iwdd.net ( http://iwdd.github.io ) のソースコードです。
+[IWDD公式サイト](http://iwdd.github.io)のソースコードです。
 
 [https://github.com/IWDD/iwdd.github.io-middleman](https://github.com/IWDD/iwdd.github.io-middleman)  
-がソースコードで、ここで開発をします。
+がオリジナルのレポジトリです。
 
-開発をしたらpull requestを送ってください。
 
-これをbuildした結果を担当者が    
-[https://github.com/IWDD/iwdd.github.io](https://github.com/IWDD/iwdd.github.io)  
-にコミットすることで、[http://www.iwdd.net](http://www.iwdd.net)が更新されます。
-
-## 更新方法
-
-1. [https://github.com/IWDD/iwdd.github.io-middleman](https://github.com/IWDD/iwdd.github.io-middleman)  
-   を自分のgithubアカウントでforkする。
-
-2. forkしたレポジトリを git clone する。
-```
-git clone https://github.com/あなたのID/iwdd.github.io-middleman.git
-```
 
 ## 開発環境の整備
 
-いまのところ使っているのは [middleman](http://middlemanapp.com/) + [slim](http://slim-lang.com/) + [scss](http://sass-lang.com/) + [CoffeeScript](http://coffeescript.org/)
+[Middleman](http://middlemanapp.com/) + [Slim](http://slim-lang.com/) + [SCSS](http://sass-lang.com/) + [CoffeeScript](http://coffeescript.org/) + [Pure CSS Framework](http://purecss.io/)
 
 
 1. ディレクトリに移動  
@@ -52,3 +38,24 @@ bundle exec middleman server
 1. sourceディレクトリにソースコードがあるので、編集する。
 
 2. 修正が終わったら自分のレポジトリに git commit して、githubでiwdd宛てにpull requestする。
+
+
+
+## 毎月の定例更新方法
+
+1. data/iwdd.yml にコンテンツがあるので、書き換えてローカルサーバーで確認
+```
+bundle exec middleman server
+```
+
+2. ビルドする
+```
+bundle exec middleman build
+```
+
+3. プルリクエストを送る
+
+4. デプロイ
+```
+bundle exec middleman deploy
+```
