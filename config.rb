@@ -13,6 +13,8 @@ set :images_dir, 'img'
 # slim-lang settings.
 set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
 
+page '/sitemap.xml', :layout => false
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
