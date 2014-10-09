@@ -1,41 +1,148 @@
 @charset "utf-8";
-@import "iwdd_settings";
-@import "normalize";
-@import "foundation/settings";
-@import "foundation/components/grid";
-// @import "foundation/components/accordion";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/block-grid";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/button-groups";
-@import "foundation/components/buttons";
-// @import "foundation/components/clearing";
-// @import "foundation/components/dropdown";
-// @import "foundation/components/dropdown-buttons";
-// @import "foundation/components/flex-video";
-// @import "foundation/components/forms";
-// @import "foundation/components/inline-lists";
-// @import "foundation/components/joyride";
-// @import "foundation/components/keystrokes";
-// @import "foundation/components/labels";
-// @import "foundation/components/magellan";
-// @import "foundation/components/orbit";
-// @import "foundation/components/pagination";
-// @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/range-slider";
-// @import "foundation/components/reveal";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/split-buttons";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-@import "foundation/components/tables";
-// @import "foundation/components/tabs";
-// @import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-@import "foundation/components/top-bar";
-@import "foundation/components/type";
-// @import "foundation/components/offcanvas";
-// @import "foundation/components/visibility";
-@import "main";
+
+// pure css framework
+@import "pure/pure-min.css";
+@import "pure/grids-responsive-min.css";
+
+// iwdd settings
+$iwdd_red: #FD2518;
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+  font-family: "UD黎ミン L JIS2004", "UD Reimin Light JIS2004", "A-OTF UD黎ミン Pro L", "UDReiminPro-Light", Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  color:#393939;
+  background-color:#fff;
+  font-size:13px;
+}
+
+a {
+  color:inherit;
+  text-decoration:underline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:normal;
+  font-size:1.4rem;
+  color:darken($iwdd_red, 15%);
+}
+
+.banner-head {
+  width:50%;
+  margin:50px auto;
+  opacity: .8;
+}
+
+@media screen and (min-width: 35.5em) {
+  .banner-head {
+    width:40%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .banner-head {
+    width:30%;
+  }
+}
+
+.base-info {
+  margin: 30px;
+  .base-contents {
+    padding:10px;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.base-contents {
+  text-align:center;
+  h2 {
+    font-size:1.4rem;
+  }
+  p {
+
+  }
+  dl {
+    margin-top: 80px;
+    padding:80px 0 80px 0;
+    border-bottom: 1px dotted #bbb;
+    border-top: 1px dotted #bbb;
+  }
+  dt {
+    color:darken($iwdd_red, 15%);
+    padding:0;
+    margin:0;
+    line-height:1.2;
+  }
+  dd {
+    padding:0;
+    margin:0 0 20px 0;
+  }
+}
+
+.base-time-table {
+  margin: 30px;
+  h1 {
+    text-align: center;
+  }
+  .time-contents {
+    border:1px dashed #bbb;
+    @media (-webkit-min-device-pixel-ratio: 2){
+      border:0.5px dashed #bbb !important;
+    }
+    margin:15px;
+    padding:10px;
+    border-radius: 10px;
+    h2 {
+      font-size:1rem;
+      color:darken($iwdd-red, 20%)
+    }
+  }
+}
+
+.base-link2doorkeeper {
+  margin: 30px 0;
+  a.pure-button-iwdd {
+    background-color: darken($iwdd_red, 15%);
+    color: #ffffff;
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  .base-info {
+    margin: 40px 80px;
+  }
+  .base-time-table {
+    margin: 40px 80px;
+  }
+  .base-link2doorkeeper {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .base-info {
+    margin: 10%;
+  }
+  .base-time-table {
+    margin: 10%;
+  }
+  .base-link2doorkeeper {
+    margin: 10% 0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .base-info {
+    margin: 60px 10%;
+  }
+  .base-time-table {
+    margin: 80px 10%;
+  }
+  .base-link2doorkeeper {
+    margin: 10% 0;
+  }
+}
