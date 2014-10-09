@@ -8,21 +8,20 @@ div.base-info
     div.pure-u-1
       div.base-contents
         h2
-          | IWDD (vol.95) nite
+          = data.iwdd.netx_event.name
         p
           | Webに関連する最先端のデザイン系＆技術系な話題をするIT勉強会です。
         p
-          | 今回も夜開催です。もう寒いね。
-          | なんと98回目！
+          = data.iwdd.netx_event.desc
         dl
           dt
             | 会場
           dd
-            | 盛岡市アイーナ 816部屋
+            = data.iwdd.netx_event.room
           dt
             | 開催日
           dd
-            | 2014.10.11 18:00〜21:30
+            = data.iwdd.netx_event.date
           dt
             | 参加費
           dd
@@ -35,32 +34,27 @@ section.base-time-table
     div.pure-u-1.pure-u-md-1-3
       div.time-contents
         h2
-          | iPhone6おさわり会
+          = data.iwdd.netx_event.timetable.no1.title
         p
-          | 画面が大きくなって何が変わったのか？Webサイトデザイン・スマホサイトデザインにどのように影響があるのか？いろいろ考えます。
+          = data.iwdd.netx_event.timetable.no1.desc
     div.pure-u-1.pure-u-md-1-3
       div.time-contents
         h2
-          | 盛岡のエンジニアコミュ事情など
+          = data.iwdd.netx_event.timetable.no2.title
         p
-          a href="https://twitter.com/seri_k" target="_blank"
-            | @seri_k
-          | さんが盛岡に住み始めたということで、
-          a href="https://twitter.com/seri_k/status/519707626184003584" target="_blank"
-            | 岩手や盛岡の勉強会やコミュニティー関連の話
-          | などなど。
+          = data.iwdd.netx_event.timetable.no2.desc
     div.pure-u-1.pure-u-md-1-3
       div.time-contents
         h2
-          | 募集中
+          = data.iwdd.netx_event.timetable.no3.title
         p
-          | Webに関連する最先端の話題を取り上げます
+          = data.iwdd.netx_event.timetable.no1.desc
 
 
-div.pure-g
-  div.pure-u-2-5
-  div.pure-u-1-5
-    div.base-link2doorkeeper
-      a.pure-button.pure-button-iwdd href="http://iwdd.doorkeeper.jp/events/16169" target="_blank"
+nav.base-link2doorkeeper
+  div.pure-g
+    div.pure-u-2-5
+    div.pure-u-1-5
+      a.pure-button.pure-button-iwdd href="#{data.iwdd.netx_event.form_url}" target="_blank"
         | 参加申込み
 

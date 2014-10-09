@@ -103,11 +103,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .base-link2doorkeeper {
-  margin: 30px 0;
+  margin: 30px 0 80px;
+  text-align: center;
   a.pure-button-iwdd {
     background-color: darken($iwdd_red, 15%);
     color: #ffffff;
-    width:100%;
+    padding:8px 30px;
   }
 }
 
