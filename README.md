@@ -16,19 +16,19 @@ iwdd.github.io-middleman
 
 
 1. ディレクトリに移動  
-```
-cd iwdd.github.io-middleman
-```
+  ```
+  cd iwdd.github.io-middleman
+  ```
 
 2. 必要なGemファイルをインストールする  
-```
-bundle install
-```
+  ```
+  bundle install
+  ```
 
 3. 開発用サーバーを立ち上げる  
-```
-bundle exec middleman server
-```
+  ```
+  bundle exec middleman server
+  ```
 
 4. [http://localhost:4567/](http://localhost:4567/) で確認する。
 
@@ -44,18 +44,18 @@ bundle exec middleman server
 ## 毎月の定例更新方法
 
 1. data/iwdd.yml にコンテンツがあるので、書き換えてローカルサーバーで確認
-```
-bundle exec middleman server
-```
+  ```
+  bundle exec middleman server
+  ```
 
 2. ビルドする
-```
-bundle exec middleman build
-```
+  ```
+  bundle exec middleman build
+  ```
 
 3. プルリクエストを送る
 
 4. デプロイ
-```
-bundle exec middleman deploy
-```
+  ```
+  bundle exec middleman deploy
+  ```
