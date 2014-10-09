@@ -1,8 +1,8 @@
 ---
 netx_event:
-  vol: 95
-  name: 'IWDD (vol.95) nite'
-  desc: '今回も夜開催です。もう寒いね。なんと98回目！'
+  vol: 96
+  name: 'IWDD (vol.96) nite'
+  desc: '今回も夜開催です。もう寒いね。なんと96回目！'
   room: '盛岡市アイーナ 816部屋'
   date: '2014.10.11 18:00〜21:30'
   timetable:
@@ -10,7 +10,7 @@ netx_event:
       title: 'iPhone6おさわり会'
       desc: '画面が大きくなって何が変わったのか？Webサイトデザイン・スマホサイトデザインにどのように影響があるのか？いろいろ考えます。'
     no2:
-      title: '盛岡のエンジニアコミュ事'
+      title: '盛岡のエンジニアコミュ事情'
       desc: '<a href="https://twitter.com/seri_k" target="_blank">@seri_k</a>さんが盛岡に住み始めたということで、<a href="https://twitter.com/seri_k/status/519707626184003584" target="_blank">岩手や盛岡の勉強会やコミュニティー関連の話</a>などなど。'
     no3:
       title: '募集中'
