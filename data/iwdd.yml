@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 96
-  name: 'IWDD (vol.96) nite'
-  desc: '今回も夜開催です。もう寒いね。なんと96回目！'
+  vol: 97
+  name: 'IWDD (vol.97) nite'
+  desc: '今回も夜開催です。年の瀬迫る、なんと97回目！'
   room: '盛岡市アイーナ 816部屋'
-  date: '2014.10.11 18:00〜21:30'
+  date: '2014.11.08 18:00〜21:00'
   timetable:
     no1:
-      title: 'iPhone6おさわり会'
-      desc: '画面が大きくなって何が変わったのか？Webサイトデザイン・スマホサイトデザインにどのように影響があるのか？いろいろ考えます。'
+      title: 'rubyについて'
+      desc: '<a href="https://twitter.com/seri_k" target="_blank">@seri_k</a>'
     no2:
-      title: '盛岡のエンジニアコミュ事情'
-      desc: '<a href="https://twitter.com/seri_k" target="_blank">@seri_k</a>さんが盛岡に住み始めたということで、<a href="https://twitter.com/seri_k/status/519707626184003584" target="_blank">岩手や盛岡の勉強会やコミュニティー関連の話</a>などなど。'
+      title: 'ちょっと小ネタを考えます'
+      desc: 'iPhone6来ました。simとかカメラとか、なんかちょっと何かお話しするつもりでーす。（おのでら）'
     no3:
       title: '募集中'
       desc: 'Webに関連する最先端の話題を取り上げます。'
