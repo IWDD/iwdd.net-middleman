@@ -1,18 +1,18 @@
 ---
 next_event:
-  vol: 97
-  name: 'IWDD (vol.97) nite'
-  desc: '今回も夜開催です。年の瀬迫る、なんと97回目！'
+  vol: 115
+  name: 'IWDD (vol.115)'
+  desc: ''
   room: '盛岡市アイーナ 816部屋'
   date: '2014.11.08 18:00〜21:00'
   timetable:
     no1:
-      title: 'rubyについて'
-      desc: '<a href="https://twitter.com/seri_k" target="_blank">@seri_k</a>'
+      title: 'え？なんで買っちゃったの？それ。'
+      desc: 'なにも考えずに買ってしまったsim付雑誌。さぁ、このsimの活用法をみんなで考えてください！どうするこのsim！'
     no2:
-      title: 'ちょっと小ネタを考えます'
-      desc: 'iPhone6来ました。simとかカメラとか、なんかちょっと何かお話しするつもりです。（おのでら）'
+      title: '現代的なJavaScriptのはなし'
+      desc: 'ES2015とかwebpackとか'
     no3:
       title: '募集中'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'http://iwdd.doorkeeper.jp/events/16297'
+  form_url: 'https://iwdd.doorkeeper.jp/events/44999'
