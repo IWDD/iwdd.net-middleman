@@ -1,6 +1,5 @@
 language: ruby
 script: bundle exec middleman build
-cache: bundler
 env:
   global:
     - GIT_COMMITTER_NAME='suzuryo@travis-ci'
