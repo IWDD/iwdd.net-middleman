@@ -6,6 +6,10 @@ env:
     - GIT_COMMITTER_EMAIL='suzuryo@gmail.com'
     - GIT_AUTHOR_NAME='suzuryo@travis-ci'
     - GIT_AUTHOR_EMAIL='suzuryo@gmail.com'
-    - secure: RX7jVdb6k1+O2hETro91DEh/DwcYQTWJCqva9zqSyPOC7RnmpyC1LdnqaGEoBFZN154Babuz8xu/aAgm+bmohNBv1p5iuo7SyskD8qvX9xm8KGAVKvehD8Hcf00UYtCMAVe1tpVqi8f7XjinNLY3h1ZDs339QctYCE1+iRucELc=
+    - secure: "ZoLgsAKEc7NfvNjEcnylvHovsK+OOUQISu6HDXsI0JudG8+jl34G+80pXqqARzD3R/FY/7Kzak/4vmsVBMrEQiEXjoaB3cQ5lC+1X0GYDAFaRpDL62K8w5NBAh+BWVA1SxaH3OsZ+j8y8omooSEqKJBW0GDI/mIKd03DpXv30lA="
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy'
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
+  - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
+  - cp deploy.key ~/.ssh/
+  - chmod 600 ~/.ssh/deploy.key
+  - '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec middleman deploy'
