@@ -12,4 +12,5 @@ after_success:
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
   - cp deploy.key ~/.ssh/
   - chmod 600 ~/.ssh/deploy.key
+  - echo "\n" | ssh-add .ssh/deploy.key
   - '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec middleman deploy'
