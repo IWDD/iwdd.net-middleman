@@ -1,5 +1,7 @@
 language: ruby
 script: bundle exec middleman build
+cache: bundler
+bundler_args: --without production --deployment
 env:
   global:
     - GIT_COMMITTER_NAME='suzuryo@travis-ci'
@@ -12,5 +14,4 @@ after_success:
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
   - cp deploy.key ~/.ssh/
   - chmod 600 ~/.ssh/deploy.key
-  - git remote add iwdd.github.io git@github.com:IWDD/iwdd.github.io.git
   - '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec middleman deploy'
