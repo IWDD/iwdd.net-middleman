@@ -6,6 +6,6 @@ env:
     - GIT_COMMITTER_EMAIL='suzuryo@gmail.com'
     - GIT_AUTHOR_NAME='suzuryo@travis-ci'
     - GIT_AUTHOR_EMAIL='suzuryo@gmail.com'
-    - secure: f8rOHTg1fWKKF5axMJA+UASqjOwttJCm7+4Deto8ldgGVyWUU+/jGHFCwNqBqqb2/uZB7OdiRLPtW0xOwg39lqLjP22j/pYtUP2JeNv/2MRCwNzyo02jLpHVwqDmhUA9w2/9cDSRd5RgYS+VHyfeuPrKhD94xJZF0mxw5gdn8Sg=
+    - secure: xix1NOMLJWJzs+RprmFaqArSMunYFzy6SakBrBBa8hRwhAJ3Ne5svciGMrHzR4qfG6SevAysYCOYiD5aV6qpL/NSWUgPAdgfAXEqjMzLUDhbGulSU7P0l/PhMwE7CKdkOTiAYh0ugwWyBMilvBIi/UC5A7FCvCC+HmlcSbmDg8k=
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy'
