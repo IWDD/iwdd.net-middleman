@@ -3,9 +3,9 @@
 iwdd.github.io-middleman
 ========================
 
-[IWDD公式サイト](http://iwdd.github.io)のソースコードです。
+[IWDD公式サイト](http://www.iwdd.net)のソースコードです。
 
-[https://github.com/IWDD/iwdd.github.io-middleman](https://github.com/IWDD/iwdd.github.io-middleman)  
+[https://github.com/IWDD/iwdd.github.io-middleman](https://github.com/IWDD/iwdd.github.io-middleman)
 がオリジナルのレポジトリです。
 
 
@@ -15,17 +15,17 @@ iwdd.github.io-middleman
 [Middleman](http://middlemanapp.com/) + [Slim](http://slim-lang.com/) + [SCSS](http://sass-lang.com/) + [CoffeeScript](http://coffeescript.org/) + [Pure CSS Framework](http://purecss.io/)
 
 
-1. ディレクトリに移動  
+1. ディレクトリに移動
   ```
   cd iwdd.github.io-middleman
   ```
 
-2. 必要なGemファイルをインストールする  
+2. 必要なGemファイルをインストールする
   ```
   bundle install
   ```
 
-3. 開発用サーバーを立ち上げる  
+3. 開発用サーバーを立ち上げる
   ```
   bundle exec middleman server
   ```
@@ -35,9 +35,15 @@ iwdd.github.io-middleman
 
 ## 開発 & pull request
 
-1. sourceディレクトリにソースコードがあるので、編集する。
+1. 開発用ブランチを切る
 
-2. 修正が終わったら自分のレポジトリに git commit して、githubでiwdd宛てにpull requestする。
+2. sourceディレクトリにソースコードがあるので、編集する。
+
+3. 修正が終わったらgit commit して、masterにpull requestする。
+
+4. 問題なければ merge する。
+
+5. travis-ciが自動でbuildしてdeployする。
 
 
 
@@ -54,8 +60,3 @@ iwdd.github.io-middleman
   ```
 
 3. プルリクエストを送る
-
-4. デプロイ
-  ```
-  bundle exec middleman deploy
-  ```
