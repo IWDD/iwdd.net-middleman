@@ -8,4 +8,4 @@ env:
     - GIT_AUTHOR_EMAIL='suzuryo@gmail.com'
     - secure: f8rOHTg1fWKKF5axMJA+UASqjOwttJCm7+4Deto8ldgGVyWUU+/jGHFCwNqBqqb2/uZB7OdiRLPtW0xOwg39lqLjP22j/pYtUP2JeNv/2MRCwNzyo02jLpHVwqDmhUA9w2/9cDSRd5RgYS+VHyfeuPrKhD94xJZF0mxw5gdn8Sg=
 after_success:
-- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy'
