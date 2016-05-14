@@ -19,7 +19,7 @@ page '/sitemap.xml', :layout => false
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  # activate :asset_hash
+  activate :asset_hash
   # activate :relative_assets
   # set :http_prefix, "/Content/images/"
 end
@@ -27,7 +27,7 @@ end
 # iwdd.github.io deploy
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote   = "git@github.com:IWDD/iwdd.github.io.git"
+  deploy.remote   = "iwdd.github.io"
   deploy.branch   = "master"
   deploy.build_before = true
 end
