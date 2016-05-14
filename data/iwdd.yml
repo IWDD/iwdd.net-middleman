@@ -1,18 +1,18 @@
 ---
 next_event:
-  vol: 115
-  name: 'IWDD (vol.115)'
+  vol: 116
+  name: 'IWDD (vol.116)'
   desc: ''
-  room: '盛岡市アイーナ 816部屋'
-  date: '2016.05.14 18:30〜21:00'
+  room: '盛岡市アイーナ 601部屋'
+  date: '2016.06.11 18:30〜21:00'
   timetable:
     no1:
-      title: 'え？なんで買っちゃったの？それ。'
-      desc: 'なにも考えずに買ってしまったsim付雑誌。さぁ、このsimの活用法をみんなで考えてください！どうするこのsim！'
+      title: '募集中'
+      desc: 'Webに関連する最先端の話題を取り上げます。'
     no2:
-      title: '現代的なJavaScriptのはなし'
-      desc: 'ES2015とかwebpackとか'
+      title: '募集中'
+      desc: 'Webに関連する最先端の話題を取り上げます。'
     no3:
       title: '募集中'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.doorkeeper.jp/events/44999'
+  form_url: 'https://iwdd.doorkeeper.jp/events/45040'
