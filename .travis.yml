@@ -1,2 +1,11 @@
 language: ruby
 script: bundle exec middleman build
+env:
+  global:
+    - GIT_COMMITTER_NAME='iwdd@travis-ci'
+    - GIT_COMMITTER_EMAIL='info@iwdd.net'
+    - GIT_AUTHOR_NAME='iwdd@travis-ci'
+    - GIT_AUTHOR_EMAIL='info@iwdd.net'
+    - secure: TZJ+WCuiqOVyaKig9m+yx6xY3RrMUhZXgs4mnthhRHZvfk7JHE5neEi3fY6PZsH1cPXswdhphMXGDWz5hsiku2cvFw9TKGEeevjORnl5Dr3zBgF60LODB/el/UOrlyaLlUNz2ube24d2dVF1npct7mKkuF/iaDKk9MA8kQan9zs=
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'
