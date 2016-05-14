@@ -11,7 +11,7 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 # slim-lang settings.
-set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
+set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
 
 page '/sitemap.xml', :layout => false
 
