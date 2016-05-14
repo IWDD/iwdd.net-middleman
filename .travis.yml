@@ -6,7 +6,7 @@ env:
     - GIT_COMMITTER_EMAIL='suzuryo@gmail.com'
     - GIT_AUTHOR_NAME='suzuryo@travis-ci'
     - GIT_AUTHOR_EMAIL='suzuryo@gmail.com'
-    - secure: "ZoLgsAKEc7NfvNjEcnylvHovsK+OOUQISu6HDXsI0JudG8+jl34G+80pXqqARzD3R/FY/7Kzak/4vmsVBMrEQiEXjoaB3cQ5lC+1X0GYDAFaRpDL62K8w5NBAh+BWVA1SxaH3OsZ+j8y8omooSEqKJBW0GDI/mIKd03DpXv30lA="
+    - secure: "d7F1+sSKivl7QsUbMbJOvKn7NISeXqQCK2PBzbfDGl6jngtw0Ds5LPvEm3PJyyG/Ab/ZmVAf0SbbttLvWexiyX6s+ZPAZoZqZZAdtEPSgbTgFslB3zMv4+D9nzaoV1zdcdfgUaLkbuyzdCCxtQTcLgq3eRJEcXJR/2XdTgPLGL8="
 after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
