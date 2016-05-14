@@ -27,6 +27,7 @@ end
 # iwdd.github.io deploy
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote   = "https://github.com/IWDD/iwdd.github.io.git"
+  deploy.remote   = "https://#{ENV['GH_TOKEN']}github.com/IWDD/iwdd.github.io.git"
   deploy.branch   = "master"
+  deploy.build_before = true
 end
