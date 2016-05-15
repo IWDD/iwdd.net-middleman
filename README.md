@@ -39,9 +39,9 @@ iwdd.github.io-middleman
 
 2. sourceディレクトリにソースコードがあるので、編集する。
 
-3. 修正が終わったらgit commit して、masterにpull requestする。
+3. 修正が終わったら git commit して、github で master に pull request する。
 
-4. 問題なければ merge する。
+4. 問題なければ PR を accept する。
 
 5. travis-ciが自動でbuildしてdeployする。
 
@@ -49,14 +49,15 @@ iwdd.github.io-middleman
 
 ## 毎月の定例更新方法
 
-1. data/iwdd.yml にコンテンツがあるので、書き換えてローカルサーバーで確認
+1. 開発用ブランチを切る
+
+2. data/iwdd.yml にコンテンツがあるので、書き換えてローカルサーバーで確認
   ```
   bundle exec middleman server
   ```
 
-2. ビルドする
-  ```
-  bundle exec middleman build
-  ```
+3. 修正が終わったら git commit して、github で master に pull request する。
 
-3. プルリクエストを送る
+4. 問題なければ PR を accept する。
+
+5. travis-ciが自動でbuildしてdeployする。
