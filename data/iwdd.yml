@@ -1,10 +1,10 @@
 ---
 next_event:
-  vol: 116
-  name: 'IWDD (vol.116)'
+  vol: 117
+  name: 'IWDD (vol.117)'
   desc: ''
   room: '盛岡市アイーナ 601部屋'
-  date: '2016.06.11 18:30〜21:00'
+  date: '2016.07.09 18:30〜21:00'
   timetable:
     no1:
       title: '募集中'
@@ -15,4 +15,4 @@ next_event:
     no3:
       title: '募集中'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.doorkeeper.jp/events/45040'
+  form_url: 'https://iwdd.doorkeeper.jp/events/45041'
