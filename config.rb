@@ -1,4 +1,4 @@
-require "slim"
+require 'slim'
 
 ###
 # Page options, layouts, aliases and proxies
