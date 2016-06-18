@@ -45,7 +45,7 @@ end
 
 # iwdd.github.io deploy
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.remote   = "git@github.com:IWDD/iwdd.github.io.git"
   deploy.branch   = "master"
   deploy.build_before = true
