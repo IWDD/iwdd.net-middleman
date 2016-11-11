@@ -7,12 +7,12 @@ next_event:
   date: '2016.11.12 18:30〜21:00'
   timetable:
     no1:
-      title: '募集中 001'
+      title: '募集中 01'
       desc: 'Webに関連する最先端の話題を取り上げます。'
     no2:
-      title: '募集中 002'
+      title: '募集中 02'
       desc: 'Webに関連する最先端の話題を取り上げます。'
     no3:
-      title: '募集中 003'
+      title: '募集中 03'
       desc: 'Webに関連する最先端の話題を取り上げます。'
   form_url: 'https://iwdd.doorkeeper.jp/events/45045'
