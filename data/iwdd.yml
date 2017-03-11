@@ -1,10 +1,9 @@
 ---
 next_event:
-  vol: 125
-  name: 'IWDD (vol.125)'
+  vol: 126
   desc: ''
   room: '盛岡市アイーナ 816部屋'
-  date: '2017.03.11 14:00〜17:00'
+  date: '2017.04.08 14:00〜17:00'
   timetable:
     no1:
       title: '募集中 01'
@@ -15,4 +14,4 @@ next_event:
     no3:
       title: '募集中 03'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.connpass.com/event/50983/'
+  form_url: 'https://iwdd.connpass.com/event/53033/'
