@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 126
+  vol: 127
   desc: ''
   room: '盛岡市アイーナ 816部屋'
-  date: '2017.04.08 14:00〜17:00'
+  date: '2017.05.13 14:00〜17:00'
   timetable:
     no1:
-      title: 'WordPress 01'
+      title: '募集中 01'
       desc: 'Webに関連する最先端の話題を取り上げます。'
     no2:
-      title: 'WordPress 02'
+      title: '募集中 02'
       desc: 'Webに関連する最先端の話題を取り上げます。'
     no3:
       title: '募集中 03'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.connpass.com/event/53033/'
+  form_url: 'https://iwdd.connpass.com/event/54942/'
