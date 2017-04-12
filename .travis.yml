@@ -15,4 +15,6 @@ after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec middleman deploy'
 notifications:
   slack:
-    secure: ga7ZatcZ8wiUH5zXyWRWDJd9WvVbG2K9SxLKezsi4bXfuGLyaHi46srQ57WmUV11YVLzVB48L9cUmekUsRlKGvqke2SMKHJCeEAhDEVqYqpTeRCB6CYgGoK0krzL3RALqZiLyYE61NWqatnObiNATJ+Emi0nGxqLYa3zX+haTvI=
+    rooms:
+      - iwdd:KOI2kgilXYqZzsoR9FM4nH0D
+      - secure: ga7ZatcZ8wiUH5zXyWRWDJd9WvVbG2K9SxLKezsi4bXfuGLyaHi46srQ57WmUV11YVLzVB48L9cUmekUsRlKGvqke2SMKHJCeEAhDEVqYqpTeRCB6CYgGoK0krzL3RALqZiLyYE61NWqatnObiNATJ+Emi0nGxqLYa3zX+haTvI=
