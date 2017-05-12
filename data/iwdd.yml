@@ -6,8 +6,8 @@ next_event:
   date: '2017.05.13 14:00〜17:00'
   timetable:
     no1:
-      title: '募集中 01'
-      desc: 'Webに関連する最先端の話題を取り上げます。'
+      title: 'mastodon'
+      desc: 'マストドンのインスタンスを立ち上げたり、ソースを読んだりします。 https://github.com/tootsuite/mastodon'
     no2:
       title: '募集中 02'
       desc: 'Webに関連する最先端の話題を取り上げます。'
