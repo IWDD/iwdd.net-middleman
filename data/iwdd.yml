@@ -3,7 +3,7 @@ next_event:
   vol: 129
   desc: ''
   room: '盛岡市アイーナ 816部屋'
-  date: '2017.06.10 18:30〜21:00'
+  date: '2017.07.08 18:30〜21:00'
   timetable:
     no1:
       title: 'mastodon'
@@ -14,4 +14,4 @@ next_event:
     no3:
       title: '募集中 03'
       desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.connpass.com/event/59084/'
+  form_url: 'https://iwdd.connpass.com/event/61711/'
