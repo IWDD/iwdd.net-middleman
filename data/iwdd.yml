@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 129
+  vol: 130
   desc: ''
-  room: '盛岡市アイーナ 816部屋'
-  date: '2017.07.08 18:30〜21:00'
+  room: '早池峰焼き　星工房'
+  date: '2017.08.19 13:30〜16:00'
   timetable:
     no1:
-      title: 'mastodon'
+      title: '陶芸大会'
       desc: ''
     no2:
-      title: 'AdobeXD'
+      title: '陶芸大会'
       desc: ''
     no3:
-      title: '募集中 03'
-      desc: 'Webに関連する最先端の話題を取り上げます。'
-  form_url: 'https://iwdd.connpass.com/event/61711/'
+      title: '陶芸大会'
+      desc: ''
+  form_url: 'https://iwdd.connpass.com/event/63691/'
