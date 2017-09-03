@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 130
+  vol: 131
   desc: ''
-  room: '早池峰焼き　星工房'
-  date: '2017.08.19 13:30〜16:00'
+  room: 'アイーナ813'
+  date: '2017.09.09 18:30〜21:00'
   timetable:
     no1:
-      title: '陶芸大会'
+      title: 'YouTubeのリニューアルについて考える'
       desc: ''
     no2:
-      title: '陶芸大会'
+      title: '募集中'
       desc: ''
     no3:
-      title: '陶芸大会'
+      title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/63691/'
+  form_url: 'https://iwdd.connpass.com/event/66111/'
