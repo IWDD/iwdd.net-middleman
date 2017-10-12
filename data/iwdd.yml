@@ -1,12 +1,12 @@
 ---
 next_event:
-  vol: 131
+  vol: 132
   desc: ''
-  room: 'アイーナ813'
-  date: '2017.09.09 18:30〜21:00'
+  room: 'アイーナ815'
+  date: '2017.10.14 18:30〜21:00'
   timetable:
     no1:
-      title: 'YouTubeのリニューアルについて考える'
+      title: 'Google Home'
       desc: ''
     no2:
       title: '募集中'
@@ -14,4 +14,4 @@ next_event:
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/66111/'
+  form_url: 'https://iwdd.connpass.com/event/66572/'
