@@ -1,12 +1,12 @@
 ---
 next_event:
-  vol: 132
+  vol: 133
   desc: ''
-  room: 'アイーナ815'
-  date: '2017.10.14 18:30〜21:00'
+  room: 'アイーナ和室606'
+  date: '2017.11.11 14:30〜17:00'
   timetable:
     no1:
-      title: 'Google Home'
+      title: '募集中'
       desc: ''
     no2:
       title: '募集中'
@@ -14,4 +14,4 @@ next_event:
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/66572/'
+  form_url: 'https://iwdd.connpass.com/event/66700/'
