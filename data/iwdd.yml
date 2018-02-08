@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 135
+  vol: 136
   desc: ''
   room: 'アイーナ605部屋'
-  date: '2018.01.13 14:00〜17:00'
+  date: '2018.02.10 14:00〜17:00'
   timetable:
     no1:
-      title: '地方の中小HPをServerlessで'
-      desc: 'サーバーレスでどこまでできる？'
+      title: '募集中'
+      desc: ''
     no2:
       title: '募集中'
       desc: ''
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/66702/'
+  form_url: 'https://iwdd.connpass.com/event/66703/'
