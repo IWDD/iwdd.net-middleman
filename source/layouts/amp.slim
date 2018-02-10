@@ -7,15 +7,11 @@ html.no-js lang="ja" amp="amp"
   /! <![endif]
   head
     meta charset="utf-8"
-    meta name="viewport" content="width=device-width, initial-scale=1.0"
-    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"
     title
       = current_page.data.title || "Welcome to IWDD"
     meta name="description" content="#{current_page.data.desc}"
     = stylesheet_link_tag "iwdd"
-    = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    = javascript_include_tag "modernizr.custom"
-    = javascript_include_tag "//typesquare.com/accessor/script/typesquare.js?hwilS1AD1~w%3D"
 
     link rel="canonical" href="/index.html"
     | <script type="application/ld+json">
@@ -35,7 +31,12 @@ html.no-js lang="ja" amp="amp"
 
   body class="#{page_classes}" id="wanko"
   
-    = partial 'nav'
+    div.banner
+      div.pure-g
+        div.pure-u-1
+          h1.banner-head
+            | <amp-img src='iwdd_logo.svg' alt="IWDD" id="iwdd_logo" class="pure-img"></amp-img>
+
 
     article
       = yield
