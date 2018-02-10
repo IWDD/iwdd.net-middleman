@@ -34,7 +34,7 @@ set :images_dir, 'img'
 set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
 
 # amp
-page /.amp.html/$, :layout => "amp"
+page 'index.amp.html', :layout => "amp"
 
 # Build-specific configuration
 configure :build do
