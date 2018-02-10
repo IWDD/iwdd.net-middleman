@@ -1,9 +1,10 @@
 language: ruby
 script: bundle exec middleman build
-install:
+before_script:
+  - bundle install
   - npm install -g firebase-tools
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
 notifications:
   slack:
     rooms:
