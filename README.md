@@ -1,36 +1,40 @@
-[![Build Status](https://travis-ci.org/IWDD/iwdd.github.io-middleman.png?branch=master)](https://travis-ci.org/IWDD/iwdd.github.io-middleman)
+[![Build Status](https://travis-ci.org/IWDD/iwdd.net-middleman.png?branch=master)](https://travis-ci.org/IWDD/iwdd.net-middleman)
 
-iwdd.github.io-middleman
+iwdd.net-middleman
 ========================
 
-[IWDD公式サイト](http://www.iwdd.net)のソースコードです。
+[IWDD公式サイト](https://iwdd.net)のソースコードです。
 
-[https://github.com/IWDD/iwdd.github.io-middleman](https://github.com/IWDD/iwdd.github.io-middleman)
+[https://github.com/IWDD/iwdd.net-middleman](https://github.com/IWDD/iwdd.net-middleman)
 がオリジナルのレポジトリです。
 
 
 
 ## 開発環境の整備
 
-[Middleman](http://middlemanapp.com/) + [Slim](http://slim-lang.com/) + [SCSS](http://sass-lang.com/) + [CoffeeScript](http://coffeescript.org/) + [Pure CSS Framework](http://purecss.io/)
+[Middleman](http://middlemanapp.com/) + [Slim](http://slim-lang.com/) + [SCSS](http://sass-lang.com/)
 
-
-1. ディレクトリに移動
+1. git clone
   ```
-  cd iwdd.github.io-middleman
+  git clone https://github.com/IWDD/iwdd.net-middleman.git
   ```
 
-2. 必要なGemファイルをインストールする
+2. ディレクトリに移動
+  ```
+  cd iwdd.net-middleman
+  ```
+
+3. 必要なGemファイルをインストールする
   ```
   bundle install
   ```
 
-3. 開発用サーバーを立ち上げる
+4. 開発用サーバーを立ち上げる
   ```
   bundle exec middleman server
   ```
 
-4. [http://localhost:4567/](http://localhost:4567/) で確認する。
+5. [http://localhost:4567/](http://localhost:4567/) で確認する。
 
 
 ## 開発 & pull request
@@ -43,7 +47,7 @@ iwdd.github.io-middleman
 
 4. 問題なければ PR を accept する。
 
-5. travis-ciが自動でbuildしてdeployする。
+5. travis-ciが自動でbuildしてfirebase deployする。
 
 
 
