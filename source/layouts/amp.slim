@@ -46,14 +46,10 @@ html lang="ja" amp="amp"
 
   body class="#{page_classes}" id="wanko"
   
-    div.banner
-      div.pure-g
-        div.pure-u-1
-          h1.banner-head
-            | <amp-img src='/img/iwdd_logo.svg' alt="IWDD" id="iwdd_logo" 
-            | class="pure-img" width="912" height="214" layout="responsive">
-            | </amp-img>
+    h1
+      | <amp-img src='/img/iwdd_logo.svg' alt="IWDD" id="iwdd_logo" 
+      | class="pure-img" width="912" height="214" layout="responsive">
+      | </amp-img>
 
     article
       = yield
-
