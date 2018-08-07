@@ -1,9 +1,9 @@
 ---
 next_event:
-  vol: 141
+  vol: 142
   desc: ''
-  room: 'アイーナ816部屋 '
-  date: '2018.07.14 18:30〜21:00'
+  room: 'アイーナ604部屋 '
+  date: '2018.08.11 18:30〜21:00'
   timetable:
     no1:
       title: '募集中'
@@ -14,4 +14,4 @@ next_event:
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/66708/'
+  form_url: 'https://iwdd.connpass.com/event/97405/'
