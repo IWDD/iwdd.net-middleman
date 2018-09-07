@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 142
+  vol: 143
   desc: ''
-  room: 'アイーナ604部屋 '
-  date: '2018.08.11 18:30〜21:00'
+  room: 'アイーナ816部屋 '
+  date: '2018.09.09 18:30〜21:00'
   timetable:
     no1:
-      title: '募集中'
-      desc: ''
+      title: 'WordPressの研究'
+      desc: 'Gutenberg'
     no2:
       title: '募集中'
       desc: ''
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/97405/'
+  form_url: 'https://iwdd.connpass.com/event/66709/'
