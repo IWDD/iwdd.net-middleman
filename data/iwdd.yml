@@ -1,17 +1,17 @@
 ---
 next_event:
-  vol: 143
+  vol: 144
   desc: ''
   room: 'アイーナ816部屋 '
-  date: '2018.09.09 18:30〜21:00'
+  date: '2018.10.13 18:30〜21:00'
   timetable:
     no1:
-      title: 'WordPressの研究'
-      desc: 'Gutenberg'
+      title: '募集中'
+      desc: ''
     no2:
-      title: 'ファブテラスいわてでなんかやってきたよ。'
-      desc: 'ファブテラスいわてで使えるレーザーカッターでアクリル板を切ってみる（リベンジ）'
+      title: '募集中'
+      desc: ''
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/66709/'
+  form_url: 'https://iwdd.connpass.com/event/66710/'
