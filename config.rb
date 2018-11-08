@@ -11,6 +11,12 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+helpers do
+  def date_time(data)
+    "#{data.iwdd.next_event.date_y}.#{data.iwdd.next_event.date_m}.#{data.iwdd.next_event.date_d} #{data.iwdd.next_event.start} - #{data.iwdd.next_event.end}"
+  end
+end
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
