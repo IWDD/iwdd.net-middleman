@@ -1,10 +1,5 @@
 doctype html
-/![if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-/![if IE 7] <html class="no-js lt-ie9 lt-ie8">
-/![if IE 8] <html class="no-js lt-ie9">
-/! [if gt IE 8]><!
-html.no-js lang="ja"
-  /! <![endif]
+html lang="ja"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -14,7 +9,6 @@ html.no-js lang="ja"
     meta name="description" content="#{current_page.data.desc}"
     = stylesheet_link_tag "iwdd"
     = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    = javascript_include_tag "modernizr.custom"
     = javascript_include_tag "//typesquare.com/accessor/script/typesquare.js?hwilS1AD1~w%3D"
     link rel="amphtml" href="/index.amp.html"
 
@@ -24,8 +18,6 @@ html.no-js lang="ja"
 
     article
       = yield
-
-    = javascript_include_tag "iwdd"
 
     javascript:
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
