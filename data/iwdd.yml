@@ -1,13 +1,13 @@
 ---
 next_event:
-  vol: '150'
+  vol: '151'
   desc: ''
   room: 'アイーナ816部屋 '
   date_y: '2019'
-  date_m: '04'
-  date_d: '13'
-  start: '14:00'
-  end: '17:00'
+  date_m: '05'
+  date_d: '11'
+  start: '18:30'
+  end: '21:30'
   timetable:
     no1:
       title: '募集中'
@@ -18,4 +18,4 @@ next_event:
     no3:
       title: '募集中'
       desc: ''
-  form_url: 'https://iwdd.connpass.com/event/120260/'
+  form_url: 'https://iwdd.connpass.com/'
