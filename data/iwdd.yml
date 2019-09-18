@@ -10,12 +10,12 @@ next_event:
   end: '21:30'
   timetable:
     no1:
-      title: '募集中'
+      title: '募集中です'
       desc: ''
     no2:
-      title: '募集中'
+      title: '募集中です'
       desc: ''
     no3:
-      title: '募集中'
+      title: '募集中です'
       desc: ''
   form_url: 'https://iwdd.connpass.com/'
