@@ -1,16 +1,16 @@
 ---
 next_event:
-  vol: '157'
+  vol: '158'
   desc: ''
-  room: '〼～かまどのある家 '
-  date_y: '2019'
-  date_m: '12'
-  date_d: '14'
+  room: 'アイーナ 813 部屋'
+  date_y: '2020'
+  date_m: '01'
+  date_d: '11'
   start: '14:00'
   end: '17:00'
   timetable:
     no1:
-      title: '忘年会'
+      title: '募集中'
       desc: ''
     no2:
       title: '募集中'
