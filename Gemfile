@@ -2,13 +2,10 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem 'middleman', '>= 4.2.0'
+gem 'middleman', '>= 4.3.5'
 
 # Live-reloading plugin
 gem 'middleman-livereload'
-
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 gem 'slim'
 
