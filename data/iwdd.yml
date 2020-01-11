@@ -6,7 +6,7 @@ next_event:
   date_y: '2020'
   date_m: '01'
   date_d: '11'
-  start: '14:00'
+  start: '14:01'
   end: '17:00'
   timetable:
     no1:
