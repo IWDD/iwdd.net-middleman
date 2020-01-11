@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IWDD/iwdd.net-middleman.png?branch=master)](https://travis-ci.org/IWDD/iwdd.net-middleman)
+[![CircleCI](https://circleci.com/gh/IWDD/iwdd.net-middleman/tree/master.svg?style=svg)](https://circleci.com/gh/IWDD/iwdd.net-middleman/tree/master)
 
 iwdd.net-middleman
 ========================
@@ -15,22 +15,22 @@ iwdd.net-middleman
 [Middleman](http://middlemanapp.com/) + [Slim](http://slim-lang.com/) + [SCSS](http://sass-lang.com/)
 
 1. git clone
-  ```
+  ```shell script
   git clone https://github.com/IWDD/iwdd.net-middleman.git
   ```
 
 2. ディレクトリに移動
-  ```
+  ```shell script
   cd iwdd.net-middleman
   ```
 
 3. 必要なGemファイルをインストールする
-  ```
+  ```shell script
   bundle install
   ```
 
 4. 開発用サーバーを立ち上げる
-  ```
+  ```shell script
   bundle exec middleman server
   ```
 
@@ -47,7 +47,7 @@ iwdd.net-middleman
 
 4. 問題なければ PR を accept する。
 
-5. travis-ciが自動でbuildしてfirebase deployする。
+5. circle-ciが自動でbuildしてfirebase deployする。
 
 
 
@@ -56,7 +56,7 @@ iwdd.net-middleman
 1. 開発用ブランチを切る
 
 2. data/iwdd.yml にコンテンツがあるので、書き換えてローカルサーバーで確認
-  ```
+  ```shell script
   bundle exec middleman server
   ```
 
@@ -64,4 +64,4 @@ iwdd.net-middleman
 
 4. 問題なければ PR を accept する。
 
-5. travis-ciが自動でbuildしてdeployする。
+5. circle-ciが自動でbuildしてdeployする。
