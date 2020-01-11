@@ -48,25 +48,9 @@ jobs:
           command: |
             bundle exec middleman build
 
-  deploy:
-      steps:
-        - run:
-            name: Deploy to Firebase
-            command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-
-
-workflows:
-  version: 2
-  deploy_to_firebase:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
-      - deploy
-
-
+      - run:
+          name: Deploy to Firebase
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+            fi
