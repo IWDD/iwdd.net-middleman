@@ -49,24 +49,22 @@ jobs:
             bundle exec middleman build
 
   deploy:
-      steps:
-        - run:
-            name: Deploy to Firebase
-            command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+    docker:
+      - image: circleci/ruby:2.7.0-buster-node
+    steps:
+      - run:
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 
 
 workflows:
   version: 2
   deploy_to_firebase:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
     jobs:
       - build
-      - deploy
-
-
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
