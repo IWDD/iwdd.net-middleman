@@ -1,0 +1,72 @@
+version: 2
+jobs:
+  build:
+    parallelism: 1
+    docker:
+      - image: circleci/ruby:2.7.0-buster-node
+        environment:
+          BUNDLE_JOBS: 3
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundle
+    steps:
+      - checkout
+
+      - run:
+          name: Which bundler?
+          command: bundle -v
+
+      - restore_cache:
+          keys:
+            - iwdd.net-middleman-bundle-v2-{{ checksum "Gemfile.lock" }}
+            - iwdd.net-middleman-bundle-v2-
+
+      - run:
+          name: Bundle Install
+          command: bundle check --path vendor/bundle || bundle install --deployment
+
+      - save_cache:
+          key: iwdd.net-middleman-bundle-v2-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - restore_cache:
+          keys:
+            - iwdd.net-middleman-yarn-{{ checksum "yarn.lock" }}
+            - iwdd.net-middleman-yarn-
+
+      - run:
+          name: firebase-tools install
+          command: yarn install --cache-folder ~/.cache/yarn
+
+      - save_cache:
+          key: iwdd.net-middleman-yarn-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      - run:
+          name: Run middleman build
+          command: |
+            bundle exec middleman build
+
+  deploy:
+      steps:
+        - run:
+            name: Deploy to Firebase
+            command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+
+
+workflows:
+  version: 2
+  deploy_to_firebase:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
+      - deploy
+
+

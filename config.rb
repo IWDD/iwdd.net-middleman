@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'slim'
 
 ###
@@ -37,10 +38,10 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 # slim-lang settings.
-set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
+set :slim, pretty: true, sort_attrs: false, format: :html
 
 # amp
-page 'index.amp.html', :layout => "amp"
+page 'index.amp.html', layout: 'amp'
 
 # Build-specific configuration
 configure :build do
