@@ -48,20 +48,9 @@ jobs:
           command: |
             bundle exec middleman build
 
-  deploy:
-    docker:
-      - image: circleci/ruby:2.7.0-buster-node
-    steps:
       - run:
           name: Deploy to Firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-
-
-workflows:
-  version: 2
-  deploy_to_firebase:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+            fi
