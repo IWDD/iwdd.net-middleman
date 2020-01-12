@@ -1,28 +1,33 @@
+- events = get_events_from_conpass_api
 div.base-info
   div.pure-g
     div.pure-u-1
       div.base-contents
-        h2
-          | IWDD (vol.
-          = data.iwdd.next_event.vol
-          | )
-        p
-          | Webに関連する最先端のデザイン系＆技術系な話題をするIT勉強会です。
-        p
-          = data.iwdd.next_event.desc
-        dl
-          dt
-            | 会場
-          dd
-            = data.iwdd.next_event.room
-          dt
-            | 開催日
-          dd
-            = date_time(data)
-          dt
-            | 参加費
-          dd
-            | 社会人500円・学生無料
+        - events.each do |event|
+          h2
+            = event[:title]
+          p
+            | Webに関連する最先端のデザイン系＆技術系な話題をするIT勉強会です。
+          p
+            = event[:description]
+          dl
+            dt
+              | 会場
+            dd
+              = event[:place]
+              br
+              = event[:address]
+            dt
+              | 開催日
+            dd
+              = event[:started_at]
+              br
+              = event[:ended_at]
+            dt
+              | 参加費
+            dd
+              | 社会人500円・学生無料
+
 
 section.base-time-table
   div.pure-g
