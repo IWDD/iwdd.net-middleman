@@ -4,30 +4,30 @@ div.base-info
     div.pure-u-1
       div.base-contents
         - events.each do |event|
-          h2
-            = event[:title]
-          p
-            | Webに関連する最先端のデザイン系＆技術系な話題をするIT勉強会です。
-          dl
-            dt
-              | 会場
-            dd
-              = event[:place]
-              br
-              = event[:address]
-            dt
-              | 開催日
-            dd
-              = generate_started_ended(event[:started_at], event[:ended_at])
-            dt
-              | 参加費
-            dd
-              | 社会人500円・学生無料
-            dt
-              | 今月のお題
-            dd
-              = generate_time_table(event[:description])
-            dt
-              | 参加申し込み
-            dd
-              = link_to '参加申込', event[:event_url]
+          div.event
+            h2
+              = event[:title]
+            dl
+              dt
+                | 会場
+              dd
+                = event[:place]
+                |  (
+                = event[:address]
+                | )
+              dt
+                | 開催日
+              dd
+                = generate_started_ended(event[:started_at], event[:ended_at])
+              dt
+                | 参加費
+              dd
+                | 社会人500円・学生無料
+              dt
+                | 今月のお題
+              dd
+                = generate_time_table(event[:description])
+              dt
+                | 参加申し込み
+              dd
+                = link_to event[:event_url], event[:event_url], {target: '_blank'}
