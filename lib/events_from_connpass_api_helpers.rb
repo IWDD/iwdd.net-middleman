@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'nokogiri'
+
 module EventFromConnpassApiHelpers
   # connpass の API から JSON を取得する
   def get_events_from_connpass_api
@@ -34,5 +36,10 @@ module EventFromConnpassApiHelpers
     else
       raise
     end
+  end
+
+  def generate_time_table(description)
+    doc = Nokogiri::HTML(description.gsub("\n", ''))
+    doc.css('ul li').map {|n| n.text}.join(',')
   end
 end

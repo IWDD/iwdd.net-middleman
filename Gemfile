@@ -11,3 +11,5 @@ gem 'slim'
 
 # for generate sitemap.xml
 gem 'builder'
+
+gem 'nokogiri'

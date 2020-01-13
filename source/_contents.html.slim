@@ -8,8 +8,6 @@ div.base-info
             = event[:title]
           p
             | Webに関連する最先端のデザイン系＆技術系な話題をするIT勉強会です。
-          p
-            = event[:description]
           dl
             dt
               | 会場
@@ -27,35 +25,11 @@ div.base-info
               | 参加費
             dd
               | 社会人500円・学生無料
-
-
-section.base-time-table
-  div.pure-g
-    h1.pure-u-1
-      | 今月のお題
-    div.pure-u-1.pure-u-md-1-3
-      div.time-contents
-        h2
-          = data.iwdd.next_event.timetable.no1.title
-        p
-          = data.iwdd.next_event.timetable.no1.desc
-    div.pure-u-1.pure-u-md-1-3
-      div.time-contents
-        h2
-          = data.iwdd.next_event.timetable.no2.title
-        p
-          = data.iwdd.next_event.timetable.no2.desc
-    div.pure-u-1.pure-u-md-1-3
-      div.time-contents
-        h2
-          = data.iwdd.next_event.timetable.no3.title
-        p
-          = data.iwdd.next_event.timetable.no3.desc
-
-
-nav.base-link2doorkeeper
-  div.pure-g
-    div.pure-u-2-5
-    div.pure-u-1-5
-      a.pure-button.pure-button-iwdd href="#{data.iwdd.next_event.form_url}" target="_blank"
-        | 参加申込み
+            dt
+              | 今月のお題
+            dd
+              = generate_time_table(event[:description])
+            dt
+              | 参加申し込み
+            dd
+              = link_to '参加申込', event[:event_url]
