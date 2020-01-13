@@ -1,5 +1,12 @@
 # frozen_string_literal: true
+
+require 'active_support/time'
+require 'json'
+require 'net/http'
+require 'net/https'
 require 'slim'
+
+require 'lib/events_from_connpass_api_helpers'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -17,6 +24,8 @@ helpers do
     "#{data.iwdd.next_event.date_y}.#{data.iwdd.next_event.date_m}.#{data.iwdd.next_event.date_d} #{data.iwdd.next_event.start} - #{data.iwdd.next_event.end}"
   end
 end
+
+helpers EventFromConnpassApiHelpers
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
