@@ -42,4 +42,8 @@ module EventFromConnpassApiHelpers
     doc = Nokogiri::HTML(description.gsub("\n", ''))
     doc.css('ul li').map {|n| n.text}.join(',')
   end
+
+  def generate_started_ended(started, ended)
+    "#{Time.parse(started).strftime("%Y.%m.%d %H:%M")} - #{Time.parse(ended).strftime("%H:%M")}"
+  end
 end

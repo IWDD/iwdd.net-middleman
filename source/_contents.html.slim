@@ -18,9 +18,7 @@ div.base-info
             dt
               | 開催日
             dd
-              = event[:started_at]
-              br
-              = event[:ended_at]
+              = generate_started_ended(event[:started_at], event[:ended_at])
             dt
               | 参加費
             dd
