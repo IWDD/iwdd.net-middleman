@@ -65,3 +65,4 @@ iwdd.net-middleman
 4. 問題なければ PR を accept する。
 
 5. circle-ciが自動でbuildしてdeployする。
+
