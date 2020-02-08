@@ -21,7 +21,7 @@ module EventFromConnpassApiHelpers
            yms[1..3].join(',')
          end
 
-    uri = URI("https://connpass.com/api/v1/event/?series_id=2772&count=10&order=1&ym=#{ym}")
+    uri = URI("https://connpass.com/api/v1/event/?series_id=2772&count=10&order=2&ym=#{ym}")
 
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
