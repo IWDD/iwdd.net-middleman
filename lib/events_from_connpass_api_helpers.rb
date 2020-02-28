@@ -10,18 +10,15 @@ module EventFromConnpassApiHelpers
     yms = [
       now.since(0.month).strftime('%Y%m'),
       now.since(1.month).strftime('%Y%m'),
-      now.since(2.month).strftime('%Y%m'),
-      now.since(3.month).strftime('%Y%m')
     ]
 
     # 毎月15日を過ぎたら、次の月のデータを取得する
     ym = if now.day > 14
-           yms[0]
-         else
            yms[1]
+         else
+           yms[0]
          end
 
-    
     uri = URI("https://connpass.com/api/v1/event/?series_id=2772&count=10&order=2&ym=#{ym}")
 
     http = Net::HTTP.new(uri.host, uri.port)
