@@ -38,7 +38,7 @@ module EventFromConnpassApiHelpers
 
   def generate_time_table(description)
     doc = Nokogiri::HTML(description.gsub("\n", ''))
-    doc.css('ul li').map {|n| n.text}.join(',')
+    doc.css('h2 + ul li').map {|n| n.text}.join(',')
   end
 
   def generate_started_ended(started, ended)

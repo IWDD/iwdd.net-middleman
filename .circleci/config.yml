@@ -3,7 +3,7 @@ jobs:
   build_and_deploy:
     parallelism: 1
     docker:
-      - image: circleci/ruby:2.7.0-buster-node
+      - image: circleci/ruby:2.7.1-buster-node
         environment:
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
