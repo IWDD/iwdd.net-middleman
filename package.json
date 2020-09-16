@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "author": "iwdd <info@iwdd.net>",
   "devDependencies": {
-    "firebase-tools": "^8.10.0"
+    "firebase-tools": "^8.10.0",
+    "bl": ">=4.0.3",
+    "node-forge": ">=0.10.0"
   }
 }
