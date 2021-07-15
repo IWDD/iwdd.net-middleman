@@ -10,11 +10,16 @@ module EventFromConnpassApiHelpers
     yms = [
       now.since(0.month).strftime('%Y%m'),
       now.since(1.month).strftime('%Y%m'),
+      now.since(2.month).strftime('%Y%m'),
     ]
 
     # 毎月15日を過ぎたら、次の月のデータを取得する
     ym = if now.day > 14
-           yms[1]
+           if now.month == 7
+             yms[2]
+           else
+             yms[1]
+           end
          else
            yms[0]
          end
